@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+		<!DOCTYPE struts SYSTEM "http://struts.apache.org/dtds/struts-2.3.dtd" >
+<struts>
+<!-- 打开 Struts 感叹号注释, 和 SSM 问号作用一样  -->
+<constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+
+<package name="struts" namespace="/" extends="json-default">
+
+	<!-- method 是调用 action 内的方法名字 -->
+	<action name="Student_list" class="com.edgj.action.StudentAction" method="list">
+		<result name="list">Student.jsp</result>
+	</action>
+	<action name="Student_add" class="com.edgj.action.StudentAction" method="add">
+		<result name="list">Student.jsp</result>
+	</action>
+
+</package>
+</struts>
