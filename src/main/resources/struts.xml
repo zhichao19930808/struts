@@ -9,10 +9,11 @@
 
 	<!-- method 是调用 action 内的方法名字 -->
 	<action name="Student_list" class="com.edgj.action.StudentAction" method="list">
-		<result name="list">Student.jsp</result>
+		<result name="success">Student.jsp</result>
 	</action>
 	<action name="Student_add" class="com.edgj.action.StudentAction" method="add">
-		<result name="list">Student.jsp</result>
+		<result name="success">Student.jsp</result>
+		<result name="input">index.jsp</result>
 	</action>
 
 </package>
